@@ -1,9 +1,9 @@
 #include "commandHandler.h"
-#include "error/errorHandler.h"
+#include "errorHandler.h"
 
 String whatsMsg(){
     if(pressed){
-      msg = meaning(pressed);
+      msg = getMeaning(pressed);
     }
     else{
       msg = target;
@@ -88,8 +88,6 @@ void autoMan(){
     else if (z == "ok"){
       Serial.println("Saved");
     }
-
-    else if (z == "menu")
 
     else{
       error("Unknown command" + z, false);

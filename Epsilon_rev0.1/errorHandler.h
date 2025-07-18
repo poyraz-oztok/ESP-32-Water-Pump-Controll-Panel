@@ -1,7 +1,8 @@
 #ifndef ERRORHANDLER_H
 #define ERRORHANDLER_H
 
-#include "config/config.h"
+#include "config.h"
+#include "commandHandler.h"
 
 void error(String error, bool stopMotors);
 

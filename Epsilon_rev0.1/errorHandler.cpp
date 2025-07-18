@@ -4,9 +4,9 @@ void error(String error, bool stopMotors){
     digitalWrite(errLed, HIGH);
     
     if(stopMotors){
-      command("L1stop");
-      command("L2stop");
-      command("L3stop");
+      execute("L1stop");
+      execute("L2stop");
+      execute("L3stop");
     }
 
     Serial.println("Error Occured: " + error);

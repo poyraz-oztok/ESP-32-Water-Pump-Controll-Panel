@@ -1,4 +1,5 @@
 #include "lcdManager.h"
+#include "logo.h"
 
 U8G2_ST7565_LM6063_F_8080 lcd(
     U8G2_R0,
@@ -39,7 +40,7 @@ void showLogo(){
 };
 
 void startUpScheneLCD(){
-    pritnLCD(20, 30, "- by poyrazoztok")
+    pritnLCD(20, 30, "- by poyrazoztok");
     delay(2000);
     clrLCD();
     showLogo();
@@ -47,6 +48,6 @@ void startUpScheneLCD(){
 
 void pritnLCD(uint8_t x, uint8_t y, String message){
     clrLCD();
-    lcd.drawStr(x, y, message);
+    lcd.drawStr(x, y, message.c_str());
     lcd.sendBuffer();
 };

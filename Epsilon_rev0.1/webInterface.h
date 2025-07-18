@@ -1,7 +1,7 @@
 #ifndef WEBINTERFACE_H
 #define WEBINTERFACE_H
 
-#include "config/config.h"
+#include "config.h"
 #include <WiFi.h>
 #include <WebServer.h>
 

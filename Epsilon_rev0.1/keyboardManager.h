@@ -1,8 +1,8 @@
 #ifndef KEYBOARDMANAGER_H
 #define KEYBOARDMANAGER_H
 
-#include "config/config.h"
-#include "control/commandHandler.h"
+#include "config.h"
+#include "commandHandler.h"
 #include <Keypad.h>
 
 //Functions

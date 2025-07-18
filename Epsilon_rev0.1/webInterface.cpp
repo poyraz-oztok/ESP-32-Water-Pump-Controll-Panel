@@ -1,4 +1,8 @@
 #include "webInterface.h"
+#include "index.h"
+#include "keyboardManager.h"
+
+WebServer server(port);
 
 void serverInit(){
     WiFi.softAP(ssıd, password);
@@ -49,7 +53,7 @@ void handleAutoMan() {
 void handleCommand() {
     target = server.arg("target");
     whatsMsg();
-    command(msg);
+    execute(msg);
     server.send(200, "text/plain", "OK");
   }
 

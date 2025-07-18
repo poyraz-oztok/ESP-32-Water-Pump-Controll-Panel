@@ -1,7 +1,6 @@
 #include "keyboardManager.h"
-#include "config.h"
 
-Keypad keypad = Keypad(makeKeymap(keys), rowPin, coPin, rowCount, colCount);
+Keypad keypad = Keypad(makeKeymap(buttons), rowPin, colPin, rowCount, colCount);
 
 String getMeaning(char x){
     switch(x){
