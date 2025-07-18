@@ -1,13 +1,13 @@
 // Written by poyraz-oztok 9.07.2025
 
-#include "assets/index.h"
-#include "assets/logo.h"
-#include "config/config.h"
-#include "control/commandHandler.h"
-#include "error/errorHandler.h"
-#include "input/keyboardManager.h"
-#include "lcd/lcdManager.h"
-#include "web/webInterface.h"
+#include "index.h"
+#include "logo.h"
+#include "config.h"
+#include "commandHandler.h"
+#include "errorHandler.h"
+#include "keyboardManager.h"
+#include "lcdManager.h"
+#include "webInterface.h"
 
 void setup() {
   initializeLed();
