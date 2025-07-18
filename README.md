@@ -1,5 +1,5 @@
 
-# Epsilon : ESP32 Water-Pump Controll Panel 
+# Epsilon : ESP32 Water Pump Controll Panel 
 
 ![Project Status](https://img.shields.io/badge/status-prototype-purple) ![IoT](https://img.shields.io/badge/IoT-enabled-blueviolet) ![Microcontroller](https://img.shields.io/badge/MCU-ESP32-orange) ![C++](https://img.shields.io/badge/language-C++-blue) ![IDE](https://img.shields.io/badge/IDE-Arduino-turquoise)
 
