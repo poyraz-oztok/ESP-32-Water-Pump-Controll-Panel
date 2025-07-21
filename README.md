@@ -1,7 +1,7 @@
 
 # Epsilon : ESP32 Water Pump Controll Panel 
 
-![Project Status](https://img.shields.io/badge/status-prototype-purple) ![IoT](https://img.shields.io/badge/IoT-enabled-blueviolet) ![Microcontroller](https://img.shields.io/badge/MCU-ESP32-orange) ![C++](https://img.shields.io/badge/language-C++-blue) ![IDE](https://img.shields.io/badge/IDE-Arduino-turquoise)
+![Project Status](https://img.shields.io/badge/status-prototype(ongoing)-purple) ![IoT](https://img.shields.io/badge/IoT-enabled-blueviolet) ![Microcontroller](https://img.shields.io/badge/MCU-ESP32-orange) ![C++](https://img.shields.io/badge/language-C++-blue) ![IDE](https://img.shields.io/badge/IDE-Arduino-turquoise)
 
 ---
 This is a prototype IoT-based water pump controller developed during my internship. The system is designed to manage clean and dirty water pumps using an ESP32 microcontroller. It features a local LCD interface, keypad control, a web-based IoT dashboard, and supports automation through programmable rules. The controller manages up to three relays to control different pump configurations.
