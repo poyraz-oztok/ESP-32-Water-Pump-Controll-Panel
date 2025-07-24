@@ -13,8 +13,8 @@ String msg;
 String target;
 
 // ---Keypad----
-byte rowPin[rowCount] = {0, 1, 2, 3};
-byte colPin[colCount] = {4, 5, 6, 7};
+byte rowPin[rowCount] = {33, 32, 35, 34};
+byte colPin[colCount] = {14, 27, 26, 25};
 
 char buttons[rowCount][colCount] = {
     {'r','2','6','4'},

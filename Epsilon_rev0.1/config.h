@@ -4,24 +4,30 @@
 #include <Arduino.h>
 
 // ---Led Pins---
-#define onLed 19
-#define errLed 0
+#define onLed 4 //------------------
+#define errLed 0 //----------------
+
+// ---Relay Pins---
+#define relay0 12
+#define relay1 21
+#define relay2 //-----------------
 
 // ---LCD Pins---
 
-#define LCD_D0 0
-#define LCD_D1 1
-#define LCD_D2 2
-#define LCD_D3 3
-#define LCD_D4 4
-#define LCD_D5 5
-#define LCD_D6 6
-#define LCD_D7 7
+#define LCD_D0 34
+#define LCD_D1 35
+#define LCD_D2 32
+#define LCD_D3 33
+#define LCD_D4 25
+#define LCD_D5 26
+#define LCD_D6 27
+#define LCD_D7 14
 
-#define LCD_WR 8
-#define LCD_RST 10
-#define LCD_CS  19
-#define LCD_RS  18
+#define LCD_WR 22 
+#define LCD_RD 23
+#define LCD_RST 18
+#define LCD_CS  5
+#define LCD_RS  19
 
 // ---constants---
 const String ssıd = "ESP32";
