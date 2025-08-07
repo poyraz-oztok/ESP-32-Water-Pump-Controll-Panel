@@ -5,11 +5,10 @@ Keypad keypad = Keypad(makeKeymap(buttons), rowPin, colPin, rowCount, colCount);
 String getMeaning(char x){
     switch(x){
       case 'a':
-        autoMan();
-        Btn = Mode;
+        Btn = "automan";
         break;
       case 'r':
-        Btn = "Reset";
+        Btn = "reset";
         break;
       case '1':
         Btn = "L1";
@@ -24,19 +23,19 @@ String getMeaning(char x){
         Btn = "L2Stop";
         break;
       case 'm':
-        Btn = "Menu";
+        Btn = "menu";
         break;
       case 'b':
-        Btn = "Back";
+        Btn = "back";
         break;
       case 'k':
-        Btn = "OK";
+        Btn = "ok";
         break;
       case 'u':
-        Btn = "Up";
+        Btn = "up";
         break;
       case 'd':
-        Btn = "Down";
+        Btn = "down";
         break;
       case '5':
         Btn = "L3";
@@ -53,7 +52,6 @@ String getMeaning(char x){
 void keyboardListen(){
   pressed = keypad.getKey();
     if (pressed){
-
       execute(whatsMsg());
     }; 
 }

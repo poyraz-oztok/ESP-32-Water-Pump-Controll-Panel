@@ -8,5 +8,6 @@
 //Functions
 String getMeaning(char x);
 void keyboardListen();
+void showDefault();
 
 #endif

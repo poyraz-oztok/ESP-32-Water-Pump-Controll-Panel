@@ -9,6 +9,7 @@ void showLogo();
 void setUpLCD();
 void startUpScheneLCD();
 void clrLCD();
-void pritnLCD(uint8_t x, uint8_t y, String message);
+void printLCD(uint8_t x, uint8_t y, String message);
+void updateLCD();
 
 #endif

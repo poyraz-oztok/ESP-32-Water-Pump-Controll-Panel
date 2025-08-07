@@ -1,4 +1,5 @@
 #include "errorHandler.h"
+#include "lcdManager.h"
 
 void error(String error, bool stopMotors){
     digitalWrite(errLed, HIGH);
@@ -9,9 +10,7 @@ void error(String error, bool stopMotors){
       execute("L3stop");
     }
 
-    Serial.println("Error Occured: " + error);
+    Serial.println("Error Occured: "+ error);
 
     //Add func to write the error to the web interface.
-
-    isError = true;
   };

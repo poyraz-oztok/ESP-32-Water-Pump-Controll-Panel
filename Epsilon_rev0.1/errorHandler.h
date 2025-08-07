@@ -5,5 +5,6 @@
 #include "commandHandler.h"
 
 void error(String error, bool stopMotors);
+void adderor(const char* errorMessage);
 
 #endif

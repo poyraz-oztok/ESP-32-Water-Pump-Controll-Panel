@@ -10,14 +10,19 @@
 #include "webInterface.h"
 
 void setup() {
+  Serial.begin(9600);
   initializeLed();
   setUpLCD();
   serverInit();
   startUpScheneLCD();
+  clrLCD();
+  updateLCD();
+  
 }
 
 void loop() {
 serverListen();
 keyboardListen();
+
 
 }

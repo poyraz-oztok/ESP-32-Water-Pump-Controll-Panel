@@ -7,27 +7,22 @@
 #define onLed 4 //------------------
 #define errLed 0 //----------------
 
-// ---Relay Pins---
-#define relay0 12
-#define relay1 21
-#define relay2 //-----------------
-
 // ---LCD Pins---
 
-#define LCD_D0 34
-#define LCD_D1 35
-#define LCD_D2 32
-#define LCD_D3 33
-#define LCD_D4 25
-#define LCD_D5 26
-#define LCD_D6 27
-#define LCD_D7 14
+#define LCD_D0 0
+#define LCD_D1 1
+#define LCD_D2 2
+#define LCD_D3 3
+#define LCD_D4 4
+#define LCD_D5 5
+#define LCD_D6 6
+#define LCD_D7 7
 
-#define LCD_WR 22 
-#define LCD_RD 23
-#define LCD_RST 18
-#define LCD_CS  5
-#define LCD_RS  19
+#define LCD_WR 9
+#define LCD_RST 19
+#define LCD_CS  18
+#define LCD_RS  8
+
 
 // ---constants---
 const String ssıd = "ESP32";
@@ -39,6 +34,8 @@ extern bool wasManual;
 extern bool isOn;
 extern bool isError;
 extern bool isControllingLcd;
+extern bool isSaved;
+extern bool menu;
 
 // ---Keypad---
 const uint8_t rowCount = 4;
@@ -52,8 +49,22 @@ extern String Btn;
 extern String msg;
 extern String target;
 
+extern int selectedM;
+extern bool subMenu;
+
+extern String pump1;
+extern String pump2;
+extern String pump3;
+
 extern char pressed;
 extern char buttons[rowCount][colCount];
+
+int const menuCount = 9;
+extern String Menu[menuCount];
+
+int const langCount = 6;
+extern String lang[langCount];
+extern int selectedSubM;
 
 //Func
 void initializeLed();
